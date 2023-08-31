@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#80c8ff" /> <!-- Background color -->
+    <corners android:radius="25dp" /> <!-- Rounded corners radius -->
+    <padding
+        android:left="2dp"
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="2dp" /> <!-- Padding for box shadow -->
+    <stroke
+        android:width="2dp"
+        android:color="#000000"
+        android:alpha="0.96" /> <!-- Box shadow -->
+</shape>

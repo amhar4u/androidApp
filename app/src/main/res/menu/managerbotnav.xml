@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/dashboard"
+          android:title="Dashboard"
+          android:icon="@drawable/baseline_dashboard_customize_24"/>
+    <item android:id="@+id/approvereg"
+          android:title="ManageUsers"
+          android:icon="@drawable/baseline_approval_24"/>
+    <item android:id="@+id/approveleave"
+          android:title="ApproveLeave"
+          android:icon="@drawable/baseline_add_task_24"/>
+    <item android:id="@+id/report"
+          android:title="Report"
+          android:icon="@drawable/baseline_insert_drive_file_24"/>
+    <item android:id="@+id/managerprofile"
+          android:title="Edit Profile"
+          android:icon="@drawable/baseline_manage_accounts_24"/>
+
+</menu>

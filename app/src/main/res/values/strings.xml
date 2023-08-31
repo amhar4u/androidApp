@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LMS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="current_password">Current Password</string>
+    <string-array name="type">
+        <item> Select Leave Type </item>
+        <item> Casual </item>
+        <item> Sick </item>
+        <item> Short </item>
+
+    </string-array>
+</resources>

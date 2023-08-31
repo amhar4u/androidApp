@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00bfff"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <!-- Edit Profile Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/radley"
+                android:text="Edit Profile"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <!-- Profile Image -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="177dp"
+                    android:layout_height="149dp"
+                    android:src="@drawable/download"
+                    app:civ_border_color="#00bfff"
+                    app:civ_border_width="2dp" />
+                <TextView
+                    android:id="@+id/txteditEmpId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:drawablePadding="20dp"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txteditEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawablePadding="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Edit Text Fields -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/txteditname"
+                android:layout_width="330dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_supervised_user_circle_24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="#808B96"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/txteditaddress"
+                android:layout_width="330dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_add_location_24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="#808B96"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/txteditcontact"
+                android:layout_width="330dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_perm_contact_calendar_24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="#808B96"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/btnchangepass"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="8dp"
+                android:padding="10dp"
+                android:background="@drawable/bluebutton"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4169e1"
+                app:backgroundTint="#4169e1"
+                android:src="@drawable/password"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/btnsave"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="10dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/greenbuttoon"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#009E60"
+                app:backgroundTint="#009E60"
+                android:src="@drawable/baseline_save_24"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/btndelete"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/redbutton"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:backgroundTint="#FF0000"
+                app:backgroundTint="#FF0000"
+                android:src="@drawable/baseline_delete_24"/>
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnlogout"
+            android:layout_width="330dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#00bfff"
+            android:text="Logout"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:backgroundTint="#00bfff"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</ScrollView>

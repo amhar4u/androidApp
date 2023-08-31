@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AddleaveFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="411dp"
+                android:layout_height="731dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/radley"
+                android:text="Apply Leave"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView5"
+                app:layout_constraintVertical_bias="0.043" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="380dp"
+                android:layout_height="420dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView5"
+                app:layout_constraintVertical_bias="0.99"
+                android:gravity="center"
+                android:layout_marginEnd="15dp" >
+
+                <Spinner
+                    android:id="@+id/spinnertype"
+                    android:layout_width="330dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:elevation="15dp"
+                    android:autofillHints="Leave type"
+                    android:background="@drawable/border"
+                    android:paddingLeft="20dp"
+                    android:paddingEnd="20dp"
+                    android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/txtshowdate"
+                    android:layout_width="330dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    android:elevation="15dp"
+                    android:drawableLeft="@drawable/baseline_calendar_month_24"
+                    android:drawablePadding="15dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Start Date"
+                    android:inputType="date"
+                    android:paddingStart="20dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textColorHint="#808B96"
+                    android:textSize="20sp"
+                    tools:ignore="ExtraText,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/txtenddate"
+                    android:layout_width="330dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    android:elevation="15dp"
+                    android:drawableLeft="@drawable/baseline_calendar_month_24"
+                    android:drawablePadding="15dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="End Date"
+                    android:inputType="date"
+                    android:paddingStart="20dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textColorHint="#808B96"
+                    android:textSize="20sp"
+                    tools:ignore="ExtraText,SpeakableTextPresentCheck" />
+
+
+                <TextView
+                    android:id="@+id/txtdays"
+                    android:layout_width="330dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    android:elevation="15dp"
+                    android:drawableLeft="@drawable/baseline_numbers_24"
+                    android:drawablePadding="20dp"
+                    android:ems="10"
+                    android:hint="Days"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="20dp"
+                    android:text="Days"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnapply"
+                    android:layout_width="330dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:elevation="15dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#00bfff"
+                    android:text="Apply"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#00bfff" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

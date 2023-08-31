@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid
+        android:color="#FAF9F6"/>
+    <corners
+        android:radius="10dip"/>
+    <stroke
+        android:color="#800080"
+        android:width="4dp"/> <!-- Adjust this value to change the outline width -->
+
+</shape>

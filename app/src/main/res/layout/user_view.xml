@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:id="@+id/first_layout"
+        android:layout_width="145dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/item_background"
+        android:gravity="center_horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="135dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:elevation="15dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/imguserprofile"
+            android:src="@drawable/download"
+            app:civ_border_color="#00bfff"
+            app:civ_border_width="2dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_layout"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/first_layout"
+        android:orientation="vertical"
+        android:background="@drawable/item_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtusermpid_label"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Empid : "
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtuserempid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtusername_label"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Name : "
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtuseremail_label"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Email : "
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtuseremail"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtusercontact_label"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtusercontact"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btndeleteuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#F51705"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
